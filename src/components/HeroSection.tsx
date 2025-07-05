@@ -6,28 +6,28 @@ const HeroSection = () => {
   const [openChatbot, setOpenChatbot] = useState(false);
   
   const partnerLogos = [
-    { name: "Microsoft", logo: "MS", color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-200" },
-    { name: "Google", logo: "G", color: "text-red-500", bg: "bg-red-50", border: "border-red-200" },
-    { name: "Meta", logo: "M", color: "text-blue-700", bg: "bg-blue-50", border: "border-blue-200" },
-    { name: "Amazon", logo: "A", color: "text-orange-600", bg: "bg-orange-50", border: "border-orange-200" },
-    { name: "Tesla", logo: "T", color: "text-gray-800", bg: "bg-gray-50", border: "border-gray-200" },
-    { name: "Shopify", logo: "S", color: "text-green-600", bg: "bg-green-50", border: "border-green-200" }
+    { name: "Raditya Dika", logo: "RD", color: "text-red-600", bg: "bg-red-50", border: "border-red-200" },
+    { name: "Deddy Corbuzier", logo: "DC", color: "text-purple-600", bg: "bg-purple-50", border: "border-purple-200" },
+    { name: "Ria Ricis", logo: "RR", color: "text-pink-600", bg: "bg-pink-50", border: "border-pink-200" },
+    { name: "Arief Muhammad", logo: "AM", color: "text-blue-600", bg: "bg-blue-50", border: "border-blue-200" },
+    { name: "Gita Savitri", logo: "GS", color: "text-green-600", bg: "bg-green-50", border: "border-green-200" },
+    { name: "Awkarin", logo: "AW", color: "text-orange-600", bg: "bg-orange-50", border: "border-orange-200" }
   ];
 
 
 
   const certifications = [
-    { name: "Google Partner", badge: "🏆" },
-    { name: "Meta Certified", badge: "✅" },
-    { name: "ISO 27001", badge: "🔒" },
-    { name: "HubSpot Elite", badge: "⭐" }
+    { name: "YouTube Certified", badge: "🏆" },
+    { name: "Instagram Partner", badge: "✅" },
+    { name: "TikTok Creator", badge: "🔒" },
+    { name: "LinkedIn Expert", badge: "⭐" }
   ];
 
   const achievements = [
-    { number: "1,200+", label: "Success Stories", icon: "🚀" },
-    { number: "98%", label: "Client Retention", icon: "⭐" },
-    { number: "150M+", label: "Digital Reach", icon: "📈" },
-    { number: "24/7", label: "Expert Support", icon: "🛟" }
+    { number: "500+", label: "Influencers Helped", icon: "🚀" },
+    { number: "2M+", label: "Followers Generated", icon: "⭐" },
+    { number: "85%", label: "Viral Content Rate", icon: "📈" },
+    { number: "24/7", label: "Creator Support", icon: "🛟" }
   ];
 
   return (
@@ -77,22 +77,22 @@ const HeroSection = () => {
             <div className="space-y-6">
               <p className="text-xl text-gray-700 max-w-xl leading-relaxed font-medium">
                 Bangun citra diri sebagai ahli di bidang Anda dengan dukungan strategi e-learning dan 
-                pemasaran dari tim berpengalaman kami yang telah membantu <span className="font-bold text-red-600">1,200+ klien</span> mencapai kesuksesan digital.
+                pemasaran dari tim berpengalaman kami yang telah membantu <span className="font-bold text-red-600">500+ influencer</span> mencapai kesuksesan digital.
               </p>
               
               {/* Simple Value Proposition */}
               <div className="flex flex-wrap gap-3">
                 <div className="bg-green-100 border border-green-300 text-green-800 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  ROI 400%+ Guaranteed
+                  Followers 500%+ Growth
                 </div>
                 <div className="bg-blue-100 border border-blue-300 text-blue-800 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                  Results in 60 Days
+                  Viral in 30 Days
                 </div>
                 <div className="bg-purple-100 border border-purple-300 text-purple-800 px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2">
                   <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                  Money-back Guarantee
+                  Creator Success Guarantee
                 </div>
               </div>
 
@@ -107,8 +107,8 @@ const HeroSection = () => {
                     ))}
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900">Industry Certified</div>
-                    <div className="text-xs text-gray-600">Google, Meta, HubSpot Partner</div>
+                    <div className="text-sm font-bold text-gray-900">Platform Certified</div>
+                    <div className="text-xs text-gray-600">YouTube, Instagram, TikTok Partner</div>
                   </div>
                 </div>
               </div>
@@ -195,7 +195,7 @@ const HeroSection = () => {
                 </div>
                 <div className="text-sm">
                   <div className="font-black text-gray-900 flex items-center gap-2">
-                    1,200+ CEOs & Founders
+                    500+ Influencers & Creators
                     <div className="flex">
                       {[1,2,3,4,5].map(i => (
                         <svg key={i} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
@@ -204,13 +204,13 @@ const HeroSection = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="text-gray-600">trust InfluED for their digital transformation</div>
+                  <div className="text-gray-600">trust InfluED for their content strategy</div>
                 </div>
               </div>
               
               {/* Clean Partner Logos */}
               <div className="space-y-4">
-                <p className="text-xs text-gray-600 font-bold tracking-wider uppercase">TRUSTED BY LEADING COMPANIES</p>
+                <p className="text-xs text-gray-600 font-bold tracking-wider uppercase">TRUSTED BY TOP INFLUENCERS</p>
                 <div className="grid grid-cols-3 gap-3">
                   {partnerLogos.map((logo, index) => (
                     <div key={index} className={`group flex items-center gap-3 px-4 py-3 ${logo.bg} rounded-xl border-2 ${logo.border} hover:border-gray-400 transition-all duration-300 hover:scale-105 hover:shadow-md cursor-pointer`}>
@@ -239,15 +239,15 @@ const HeroSection = () => {
                     <span className="text-sm font-bold text-gray-900">5.0 Average Rating</span>
                   </div>
                   <blockquote className="text-gray-700 font-medium italic">
-                    &ldquo;InfluED transformed our digital presence completely. ROI increased 350% in just 3 months!&rdquo;
+                    &ldquo;InfluED helped me grow from 10K to 500K followers in 6 months. Revenue increased 1000%!&rdquo;
                   </blockquote>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                      SC
+                      RD
                     </div>
                     <div>
-                      <div className="font-bold text-sm text-gray-900">Sarah Chen</div>
-                      <div className="text-xs text-gray-600">CEO, TechStart Inc.</div>
+                      <div className="font-bold text-sm text-gray-900">Rachel Davis</div>
+                      <div className="text-xs text-gray-600">Content Creator, 500K followers</div>
                     </div>
                   </div>
                 </div>
@@ -302,14 +302,14 @@ const HeroSection = () => {
                 {/* Clean Engagement Stats */}
                 <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-200">
                   <div className="text-center space-y-3">
-                    <div className="text-4xl font-black text-red-600">425%</div>
-                    <div className="text-xs text-gray-900 font-bold uppercase tracking-wide">Engagement Boost</div>
+                    <div className="text-4xl font-black text-red-600">500K+</div>
+                    <div className="text-xs text-gray-900 font-bold uppercase tracking-wide">New Followers</div>
                     <div className="flex gap-1 justify-center">
                       {[1,2,3,4,5].map(i => (
                         <div key={i} className="w-2 h-6 bg-red-600 rounded-full"></div>
                       ))}
                     </div>
-                    <div className="text-xs text-green-600 font-bold">↗ +127% This Month</div>
+                    <div className="text-xs text-green-600 font-bold">↗ +150% This Month</div>
                   </div>
                 </div>
 
@@ -322,9 +322,9 @@ const HeroSection = () => {
                       </svg>
                     </div>
                     <div>
-                      <div className="text-2xl font-black text-gray-900">$5.2M+</div>
-                      <div className="text-xs text-gray-700 font-bold">Revenue Generated</div>
-                      <div className="text-xs text-green-600 font-bold">+340% Growth</div>
+                      <div className="text-2xl font-black text-gray-900">$50K+</div>
+                      <div className="text-xs text-gray-700 font-bold">Monthly Creator Income</div>
+                      <div className="text-xs text-green-600 font-bold">+1000% Growth</div>
                     </div>
                   </div>
                 </div>
@@ -332,8 +332,8 @@ const HeroSection = () => {
                 {/* Client Count Badge */}
                 <div className="absolute bottom-8 left-8 bg-white rounded-2xl px-4 py-3 shadow-lg border-2 border-gray-200">
                   <div className="text-center">
-                    <div className="text-xl font-black text-blue-600">1,200+</div>
-                    <div className="text-xs text-gray-700 font-bold">Happy Clients</div>
+                    <div className="text-xl font-black text-blue-600">500+</div>
+                    <div className="text-xs text-gray-700 font-bold">Success Creators</div>
                   </div>
                 </div>
 
@@ -341,7 +341,7 @@ const HeroSection = () => {
                 <div className="absolute top-1/3 right-0 transform translate-x-1/2 bg-red-500 rounded-full px-4 py-2 shadow-lg border-2 border-white">
                   <div className="flex items-center gap-2">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
-                    <span className="text-white text-xs font-black">LIVE SUCCESS</span>
+                    <span className="text-white text-xs font-black">GOING VIRAL</span>
                   </div>
                 </div>
 

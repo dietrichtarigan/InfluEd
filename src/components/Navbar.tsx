@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2">
           <div className="hover:scale-105 transition-transform cursor-pointer">
-            <InfluEDLogo size={45} />
+            <InfluEDLogo size={70} />
           </div>
         </div>
         

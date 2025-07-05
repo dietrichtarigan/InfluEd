@@ -4,20 +4,20 @@ import InfluEDLogo from "@/components/InfluEDLogo";
 const team = [
   { 
     role: "CEO", 
-    name: "Sarah Johnson",
-    img: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&auto=format",
-    description: "Visionary leader dengan 10+ tahun pengalaman di digital marketing"
+    name: "Razan Aisyrinata",
+    img: "/team/ceo-photo.jpg",
+    description: "Visionary leader dengan pengalaman dalam membangun dan mengembangkan bisnis, termasuk platform edukasi digital seperti Nerolusi."
   },
   { 
     role: "CMO", 
-    name: "Michael Chen",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&auto=format",
+    name: "Sandra Regina",
+    img: "/team/cmo-photo.jpg",
     description: "Expert dalam strategi konten dan personal branding"
   },
   { 
     role: "CTO", 
-    name: "David Rodriguez",
-    img: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=300&h=300&fit=crop&auto=format",
+    name: "Dietrich Pepalem Tarigan",
+    img: "/team/cto-photo.jpg",
     description: "Tech innovator yang membangun platform digital terdepan"
   },
 ];

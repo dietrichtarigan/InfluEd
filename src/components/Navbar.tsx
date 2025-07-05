@@ -4,11 +4,11 @@ import Link from "next/link";
 import InfluEDLogo from "./InfluEDLogo";
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "What We Do", href: "/services" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/", disabled: false },
+  { name: "About Us", href: "/about", disabled: false },
+  { name: "What We Do", href: "/services", disabled: true },
+  { name: "Portfolio", href: "/portfolio", disabled: true },
+  { name: "Contact", href: "/contact", disabled: false },
 ];
 
 const Navbar = () => {
@@ -41,21 +41,34 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              href={link.href} 
-              className={`relative font-medium transition-all duration-300 py-2 px-3 rounded-lg group ${
-                activeLink === link.name 
-                  ? 'text-primary-red bg-red-50' 
-                  : 'text-custom-black hover:text-primary-red hover:bg-gray-50'
-              }`}
-              onClick={() => setActiveLink(link.name)}
-            >
-              {link.name}
-              <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-primary-red transition-all duration-300 ${
-                activeLink === link.name ? 'w-full' : 'w-0 group-hover:w-full'
-              }`}></span>
-            </Link>
+            link.disabled ? (
+              <span
+                key={link.name}
+                className="relative font-medium py-2 px-3 rounded-lg text-gray-400 cursor-not-allowed opacity-50"
+                title="Coming Soon"
+              >
+                {link.name}
+                <span className="absolute -top-1 -right-1 bg-gray-400 text-white text-xs px-1.5 py-0.5 rounded-full">
+                  Soon
+                </span>
+              </span>
+            ) : (
+              <Link 
+                key={link.name} 
+                href={link.href} 
+                className={`relative font-medium transition-all duration-300 py-2 px-3 rounded-lg group ${
+                  activeLink === link.name 
+                    ? 'text-primary-red bg-red-50' 
+                    : 'text-custom-black hover:text-primary-red hover:bg-gray-50'
+                }`}
+                onClick={() => setActiveLink(link.name)}
+              >
+                {link.name}
+                <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 bg-primary-red transition-all duration-300 ${
+                  activeLink === link.name ? 'w-full' : 'w-0 group-hover:w-full'
+                }`}></span>
+              </Link>
+            )
           ))}
           
           {/* CTA Button */}
@@ -93,17 +106,33 @@ const Navbar = () => {
       }`}>
         <div className="bg-white/95 backdrop-blur-md shadow-lg px-4 pb-4 space-y-2 border-t border-gray-200">
           {navLinks.map((link, index) => (
-            <Link 
-              key={link.name} 
-              href={link.href} 
-              className={`block text-custom-black font-medium hover:text-primary-red hover:bg-gray-50 transition-all duration-300 py-3 px-4 rounded-lg transform ${
-                open ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
-              }`}
-              style={{ transitionDelay: `${index * 50}ms` }}
-              onClick={() => {setActiveLink(link.name); setOpen(false);}}
-            >
-              {link.name}
-            </Link>
+            link.disabled ? (
+              <span
+                key={link.name}
+                className={`block text-gray-400 font-medium py-3 px-4 rounded-lg cursor-not-allowed opacity-50 relative transform ${
+                  open ? 'translate-x-0 opacity-50' : 'translate-x-full opacity-0'
+                }`}
+                style={{ transitionDelay: `${index * 50}ms` }}
+                title="Coming Soon"
+              >
+                {link.name}
+                <span className="absolute top-2 right-2 bg-gray-400 text-white text-xs px-1.5 py-0.5 rounded-full">
+                  Soon
+                </span>
+              </span>
+            ) : (
+              <Link 
+                key={link.name} 
+                href={link.href} 
+                className={`block text-custom-black font-medium hover:text-primary-red hover:bg-gray-50 transition-all duration-300 py-3 px-4 rounded-lg transform ${
+                  open ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+                }`}
+                style={{ transitionDelay: `${index * 50}ms` }}
+                onClick={() => {setActiveLink(link.name); setOpen(false);}}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <button className="w-full bg-gradient-to-r from-primary-red to-red-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg flex items-center justify-center gap-2 mt-4 transform hover:scale-105">
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

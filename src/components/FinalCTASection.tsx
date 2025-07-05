@@ -44,16 +44,16 @@ const FinalCTASection = () => {
         {/* Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="text-center">
-            <div className="text-3xl font-bold text-accent-blue mb-2">500+</div>
-            <div className="text-gray-400">Successful Projects</div>
+            <div className="text-3xl font-bold text-accent-blue mb-2">1000+</div>
+            <div className="text-gray-400">Creators Empowered</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary-red mb-2">95%</div>
-            <div className="text-gray-400">Client Satisfaction</div>
+            <div className="text-3xl font-bold text-primary-red mb-2">500%</div>
+            <div className="text-gray-400">Avg Growth Rate</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-400">Expert Support</div>
+            <div className="text-3xl font-bold text-white mb-2">60 Hari</div>
+            <div className="text-gray-400">Viral Timeline</div>
           </div>
         </div>
 

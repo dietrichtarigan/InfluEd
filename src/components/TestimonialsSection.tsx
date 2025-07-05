@@ -2,31 +2,31 @@ import React from "react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "CEO, TechStartup Inc.",
-    company: "TechStartup",
+    name: "Dr. Reza Gunawan",
+    role: "Healthcare Expert & Content Creator",
+    company: "Medical Influencer",
+    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=80&h=80&fit=crop&auto=format",
+    content: "InfluED membantu saya membangun personal branding sebagai dokter yang dipercaya. Dari 50K menjadi 2M followers, dan kini menjadi rujukan kesehatan nomor 1 di Indonesia.",
+    rating: 5,
+    metrics: { increase: "4000%", metric: "Follower Growth" }
+  },
+  {
+    name: "Anya Geraldine",
+    role: "Beauty & Lifestyle Influencer",
+    company: "Beauty Creator",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&auto=format",
-    content: "InfluED transformed our digital presence completely. We saw a 400% increase in qualified leads within 3 months. Their strategic approach is unmatched.",
+    content: "Strategy InfluED benar-benar mengubah karir saya. Engagement rate naik drastis, brand collaborations berlipat, dan sekarang punya bisnis skincare sendiri yang sukses.",
     rating: 5,
-    metrics: { increase: "400%", metric: "Lead Generation" }
+    metrics: { increase: "850%", metric: "Brand Deals" }
   },
   {
-    name: "Michael Chen",
-    role: "Founder, EduTech Solutions",
-    company: "EduTech",
+    name: "Indra Jegel",
+    role: "Stand-Up Comedian & Digital Creator",
+    company: "Entertainment",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&auto=format",
-    content: "The ROI we achieved with InfluED was phenomenal. From zero to industry thought leader in just 6 months. Absolutely recommend their expertise.",
+    content: "Tim InfluED memahami content creation seperti tidak ada yang lain. Mereka membantu saya mengoptimalkan konten, meningkatkan monetisasi, dan membangun audience yang loyal.",
     rating: 5,
-    metrics: { increase: "320%", metric: "Revenue Growth" }
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Marketing Director, FinTech Pro",
-    company: "FinTech",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&auto=format",
-    content: "Working with InfluED was a game-changer. Their team understands digital influence like no other agency. Results speak for themselves.",
-    rating: 5,
-    metrics: { increase: "280%", metric: "Engagement Rate" }
+    metrics: { increase: "650%", metric: "Revenue Stream" }
   }
 ];
 
@@ -44,16 +44,16 @@ const TestimonialsSection = () => {
         <div className="text-center mb-20">
           <div className="inline-block mb-6">
             <span className="bg-gradient-to-r from-primary-red to-accent-blue bg-clip-text text-transparent font-semibold text-lg tracking-wide">
-              CLIENT SUCCESS STORIES
+              SUCCESS STORIES FROM CREATORS
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-custom-black leading-tight">
-            What Our <span className="text-primary-red">Clients</span> Say<br />
-            About Their <span className="text-accent-blue">Transformation</span>
+            Apa Kata <span className="text-primary-red">Influencer</span> & <span className="text-accent-blue">Creator</span><br />
+            Tentang <span className="text-primary-red">Transformasi</span> Mereka
           </h2>
           <p className="text-xl text-custom-black/70 max-w-3xl mx-auto leading-relaxed">
-            Real results from real businesses. See how we&apos;ve helped industry leaders 
-            achieve unprecedented growth and establish themselves as market authorities.
+            Hasil nyata dari creator dan expert terdepan. Lihat bagaimana kami membantu 
+            influencer, praktisi, dan brand membangun otoritas digital dan mencapai pertumbuhan eksponensial.
           </p>
         </div>
 
@@ -126,8 +126,8 @@ const TestimonialsSection = () => {
                 </svg>
               </div>
               <div>
-                <div className="text-2xl font-bold text-custom-black">500+</div>
-                <div className="text-sm text-custom-black/60">Successful Projects</div>
+                <div className="text-2xl font-bold text-custom-black">1000+</div>
+                <div className="text-sm text-custom-black/60">Creators Empowered</div>
               </div>
             </div>
             
@@ -138,8 +138,8 @@ const TestimonialsSection = () => {
                 </svg>
               </div>
               <div>
-                <div className="text-2xl font-bold text-custom-black">300%+</div>
-                <div className="text-sm text-custom-black/60">Average ROI</div>
+                <div className="text-2xl font-bold text-custom-black">500%+</div>
+                <div className="text-sm text-custom-black/60">Avg. Growth Rate</div>
               </div>
             </div>
             
@@ -150,16 +150,16 @@ const TestimonialsSection = () => {
                 </svg>
               </div>
               <div>
-                <div className="text-2xl font-bold text-custom-black">90 Days</div>
-                <div className="text-sm text-custom-black/60">Results Timeline</div>
+                <div className="text-2xl font-bold text-custom-black">60 Hari</div>
+                <div className="text-sm text-custom-black/60">Viral Content Timeline</div>
               </div>
             </div>
           </div>
 
           <button className="bg-gradient-to-r from-primary-red to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-4 rounded-2xl font-bold text-lg transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
             <span className="flex items-center gap-3">
-              <span className="text-xl">💬</span>
-              Schedule Your Success Story
+              <span className="text-xl">�</span>
+              Mulai Journey Creator Success Kamu
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
